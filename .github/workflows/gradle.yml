@@ -54,6 +54,6 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
       - name: Build Docker image
-        run: docker build -t ${{ secrets.DOCKER_REPO }} .
+        run: docker build -f ./Dockerfile -t ${{ secrets.DOCKER_REPO }} .
       - name: Push Docker image
         run: docker push ${{ secrets.DOCKER_REPO }}
