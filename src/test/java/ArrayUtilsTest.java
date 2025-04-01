@@ -59,19 +59,19 @@ public class ArrayUtilsTest {
         });
     }
 
-//    @Test
-//    public void testCountOfEmpty() {
-//        assertEquals(0, ArrayUtils.countOf(new int[]{}, 3));
-//    }
-//
-//    @Test
-//    public void testCountOfMultipleOccurrences() {
-//        assertEquals(2, ArrayUtils.countOf(new int[]{1, 2, 3, 2}, 2));
-//    }
-//
-//    @Test
-//    public void testCountOfNoOccurrences() {
-//        assertEquals(0, ArrayUtils.countOf(new int[]{1, 2, 3, 4}, 5));
-//    }
+    @Test
+    public void testCountOfEmpty() {
+        assertEquals(0, ArrayUtils.countOf(new int[]{}, 3));
+    }
+
+    @Test
+    public void testCountOfMultipleOccurrences() {
+        assertEquals(2, ArrayUtils.countOf(new int[]{1, 2, 3, 2}, 2));
+    }
+
+    @Test
+    public void testCountOfNoOccurrences() {
+        assertEquals(0, ArrayUtils.countOf(new int[]{1, 2, 3, 4}, 5));
+    }
 
 }
