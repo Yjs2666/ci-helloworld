@@ -32,6 +32,7 @@ public class ArrayUtilsTest {
         assertThrows(NullPointerException.class, () -> {ArrayUtils.oddOrPos(null);});
     }
 
+
 /*
     @Test
     public void testOddOrPosAllPositives() {
