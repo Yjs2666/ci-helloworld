@@ -39,12 +39,11 @@ jobs:
           badges-directory: '.'
           fail-on-coverage-decrease: true
           fail-on-branches-decrease: true
-      - name: Debug coverage file
-        run: |
-          echo "Current directory: $(pwd)"
-          echo "===== FILES ====="
-          ls -R
-          echo "===== END ====="
+#          our previous branches coverage is 100! thus we make this to fail the docker build!
+          fail-if-branches-less-than: 100
+
+
+
 
   build_and_publish_docker_image:
     name: Publish to Docker Hub
