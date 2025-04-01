@@ -38,6 +38,9 @@ jobs:
         with:
           jacoco-csv-file: build/reports/jacoco/test/jacocoTestReport.csv
 #          fail-if-branches-less-than: 30
+#          token: ${{ secrets.GITHUB_TOKEN }}
+#          fail-on-branches-decrease: true
+#          compare-branch: 'main'
 
   build_and_publish_docker_image:
     name: Publish to Docker Hub
