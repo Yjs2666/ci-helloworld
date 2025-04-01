@@ -31,11 +31,10 @@ jobs:
       - name: Run Test Coverage
         run: ./gradlew jacocoTestReport
       - name: Jacoco
-        uses: cicirello/jacoco-badge-generator@v3.3.0
+        uses: cicirello/jacoco-badge-generator@v2.9.0
         with:
           jacoco-csv-file: build/reports/jacoco/test/jacocoTestReport.csv
-          token: ${{ secrets.GITHUB_TOKEN }}
-          compare-branch: 'main'
+          fail-on-coverage-decrease: true
           fail-on-branches-decrease: true
 
   build_and_publish_docker_image:
